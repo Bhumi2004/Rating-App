@@ -23,7 +23,7 @@ export default function StoresPage() {
     fetchStores();
   }, []);
 
-  // Filter stores whenever search changes
+
   useEffect(() => {
     const filtered = stores.filter((store) =>
       (store.name || "").toLowerCase().includes(search.toLowerCase()) ||
