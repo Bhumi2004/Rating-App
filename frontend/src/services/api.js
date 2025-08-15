@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // change to your backend URL
+  baseURL: "https://rating-app-2.onrender.com/api", // change to your backend URL
 });
 
 API.interceptors.request.use((config) => {
