@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import API from "../services/api";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import "./UpdatePassword.css"; // import CSS
+import "./UpdatePassword.css"; 
 
 const schema = yup.object({
   oldPassword: yup.string().required("Old password is required"),
