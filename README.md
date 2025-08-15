@@ -5,7 +5,7 @@ Users can sign up, log in, browse stores, leave ratings, and manage stores depen
 
 ## 🚀 Live Demo
 - **Frontend:** [https://your-frontend-url.onrender.com](https://rating-app-full-stack.onrender.com/)
-- **Backend API:** [https://rating-app-2.onrender.com/api](https://rating-app-3.onrender.com//api)
+- **Backend API:** [https://rating-app-3.onrender.com/api](https://rating-app-3.onrender.com//api)
 
 ---
 
