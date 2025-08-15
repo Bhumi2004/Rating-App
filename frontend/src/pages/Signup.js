@@ -1,11 +1,10 @@
-// src/pages/Signup.js
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import API from "../services/api";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"; // reuse the login styles
+import "./Login.css"; 
 
 const schema = yup.object({
   name: yup.string().min(20, "Min 20 chars").max(60, "Max 60 chars").required(),
