@@ -23,7 +23,7 @@ export default function UsersPage() {
     fetchUsers();
   }, []);
 
-  // Filter users when search changes
+ 
  useEffect(() => {
   const filtered = users.filter((user) =>
     (user.name || "").toLowerCase().includes(search.toLowerCase()) ||
