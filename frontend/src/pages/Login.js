@@ -1,11 +1,10 @@
-// src/pages/Login.js
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import API from "../services/api";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"; // new CSS
+import "./Login.css"; 
 
 const schema = yup.object({
   email: yup.string().email("Invalid email").required("Email is required"),
