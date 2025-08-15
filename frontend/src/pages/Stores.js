@@ -1,7 +1,6 @@
-// src/pages/Stores.js
 import React, { useState, useEffect } from "react";
 import API from "../services/api";
-import "./Stores.css"; // import CSS
+import "./Stores.css"; 
 
 export default function Stores() {
   const [stores, setStores] = useState([]);
