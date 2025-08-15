@@ -4,7 +4,6 @@ import Rating from "../models/Rating.js";
 import bcrypt from "bcryptjs";
 
 
-// Admin dashboard summary
 export const getAdminDashboard = async (req, res) => {
   try {
     const totalUsers = await User.countDocuments();
@@ -21,7 +20,6 @@ export const getAdminDashboard = async (req, res) => {
   }
 };
 
-// Get users list with filters & sort
 export const getUsersList = async (req, res) => {
   try {
     const { name, email, address, role, sort, order } = req.query;
@@ -43,7 +41,6 @@ export const getUsersList = async (req, res) => {
   }
 };
 
-// Get stores list with filters, sort & avg rating
 export const getStoresList = async (req, res) => {
   try {
     const { name, email, address, sort, order } = req.query;
@@ -58,7 +55,6 @@ export const getStoresList = async (req, res) => {
 
     const stores = await Store.find(query).sort(sortBy);
 
-    // Add avg rating for each store
     const storesWithRatings = await Promise.all(
       stores.map(async (store) => {
         const ratings = await Rating.find({ storeId: store._id });
