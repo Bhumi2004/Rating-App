@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 60px); /* account for navbar height */
+  height: calc(100vh - 60px); 
   background: #f4f4f4;
 }
 
