@@ -1,0 +1,7 @@
+#store-heading {
+  text-align: center;
+  color: #4caf50; /* optional color */
+  margin-bottom: 20px; /* spacing below */
+  font-size: 28px;    /* optional font size */
+  font-weight: bold;  /* optional */
+}

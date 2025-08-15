@@ -1,0 +1,76 @@
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+/* Table headers */
+thead th {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table cells */
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Zebra stripe */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #e0f2f1;
+  transition: background 0.2s;
+}
+
+/* Responsive: only table */
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4caf50;
+    padding: 10px 0;
+  }
+
+  tbody td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+#users-heading {
+  text-align: center;
+  color: #4caf50; /* optional color */
+  margin-bottom: 20px; /* spacing below */
+  font-size: 28px;    /* optional font size */
+  font-weight: bold;  /* optional */
+}
+

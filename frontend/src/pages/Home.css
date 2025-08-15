@@ -1,0 +1,69 @@
+.home-container {
+  min-height: 100vh;
+  background: white; /* container remains white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* text inside green card should be white */
+  padding: 20px;
+}
+
+.home-content {
+  max-width: 600px;
+  background: #4CAF50; /* green background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-login {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #1976D2;
+}
+
+.btn-signup {
+  background-color: #FF9800;
+  color: white;
+}
+
+.btn-signup:hover {
+  background-color: #F57C00;
+}
+
+.btn-dashboard {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-dashboard:hover {
+  background-color: #388E3C;
+}
